@@ -1,0 +1,20 @@
+Documentação do Terraform (Linguagem em sí) https://developer.hashicorp.com/terraform/language
+Documentação dos Providers (Conexões entre as APIs Cloud)https://registry.terraform.io/browse/providers
+Documentação dos Módulos https://registry.terraform.io/browse/modules
+
+
+
+HCL:
+    Blocos:
+        terraform
+        provider
+        resource
+        data
+        module
+        variable
+        output
+        locals
+        import
+        moved
+        removed
+        check
