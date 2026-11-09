@@ -1,12 +1,21 @@
 Documentação do Terraform (Linguagem em sí) https://developer.hashicorp.com/terraform/language
 Documentação dos Providers (Conexões entre as APIs Cloud)https://registry.terraform.io/browse/providers
 Documentação dos Módulos https://registry.terraform.io/browse/modules
+Documentação CLI: https://developer.hashicorp.com/terraform/cli
 
 
 
 HCL:
     Blocos:
-        terraform
+        terraform:
+            Possiveis configurações:
+                required_version (Principal, especificar versões terraform)
+                required_proveider (Principal, declarar providers que vamos usar)
+                backend (Principal, armazena um state no terraform)
+                Cloud (Utilizado em momentos especificos, configurar terraform cloud)
+                experiments (Utilizado em momentos especificos, habilitar nova feture para testes)
+                provider_meta (Utilizado em momentos especificos, Envia respostar as providers em relação ao módulos)
+
         provider
         resource
         data
@@ -18,3 +27,8 @@ HCL:
         moved
         removed
         check
+
+
+Terraform CLI:
+
+     
