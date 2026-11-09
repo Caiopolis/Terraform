@@ -31,4 +31,32 @@ HCL:
 
 Terraform CLI:
 
-     
+     Comandos:
+
+        terraform init: 
+            Comando básico para inicializar o projeto, baixar os providers e módulos necessários (se houver alterações tmb), criar o arquivo de estado local e o diretório .terraform. 
+            (após rodar o init e as validações rodar o arquivo com as credênciais).
+
+        Terraform FMT:
+
+            terraform fmt -check: Esse comando verifica se o código está formatado corretamente, e diz qual arquivo pode ser alterado
+
+            terraform fmt -diff: Mostra a diferença entre o código atual e o código formatado, alterando o código.
+
+            terraform fmt: Altera os arquivos que estão com formatação "errada".
+
+            terraform validate: valida se o código está correto, sem erros de sintaxe.
+
+
+        Terraform Plan:
+
+            terraform plan: é responsavel por mostrar o que será criado, alterado ou destruído, sem aplicar as alterações.
+
+            terraform plan -out plan.out: exporta um arquivo com o plan.
+
+            terraform show plan.out: O arquivo é binario, o show serve para abrir ele.
+
+        Terraform Apply:
+
+            terraform apply: Faz a valisação do plano e pede confirmação para aplicar as mudanças.
+            
