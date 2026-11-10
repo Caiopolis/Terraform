@@ -59,4 +59,7 @@ Terraform CLI:
         Terraform Apply:
 
             terraform apply: Faz a valisação do plano e pede confirmação para aplicar as mudanças.
-            
+
+            terraform apply -destroy (ou usar só terraform destroy): Destroi o bucket criado.
+
+            terraform apply plan.out: Formatado recomendado de realizar um apply é usar de base o plan.out criado com o terraform plan.
