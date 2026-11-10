@@ -1,4 +1,8 @@
 Acesso Azure.txt
 Acesso AWS.txt
 .terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+plan.out
 

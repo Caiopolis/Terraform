@@ -34,6 +34,7 @@ Terraform CLI:
      Comandos:
 
         terraform init: 
+
             Comando básico para inicializar o projeto, baixar os providers e módulos necessários (se houver alterações tmb), criar o arquivo de estado local e o diretório .terraform. 
             (após rodar o init e as validações rodar o arquivo com as credênciais).
 
@@ -63,3 +64,19 @@ Terraform CLI:
             terraform apply -destroy (ou usar só terraform destroy): Destroi o bucket criado.
 
             terraform apply plan.out: Formatado recomendado de realizar um apply é usar de base o plan.out criado com o terraform plan.
+
+        Export Variaveis:
+
+            Export TF_VAR_nomeVariavel=valorvariavel
+
+            terraform plan -out plan.out -var nomeVariavel="valorVariavel"
+
+            terraform plan -out plan.out -var-file=nomeArquivoComVariavel
+
+        Terraform Output:
+
+            Terraform Output retorna os outputs configurados no terraform.
+
+            Terraform Output -raw nomeDoOutputDesejado retorna o output especifico. (Até mesmo sensiveis)
+
+            
