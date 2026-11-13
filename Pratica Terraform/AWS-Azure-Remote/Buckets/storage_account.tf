@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "storage_account" {
   account_tier             = var.tierConta
   account_replication_type = var.recplicacaoConta
 
-  blob_properties{
+  blob_properties {
     versioning_enabled = true
   }
 
