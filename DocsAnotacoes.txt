@@ -2,6 +2,8 @@ Documentação do Terraform (Linguagem em sí) https://developer.hashicorp.com/t
 Documentação dos Providers (Conexões entre as APIs Cloud)https://registry.terraform.io/browse/providers
 Documentação dos Módulos https://registry.terraform.io/browse/modules
 Documentação CLI: https://developer.hashicorp.com/terraform/cli
+Documentação State: https://developer.hashicorp.com/terraform/language/state
+Documentação BackEnd: https://developer.hashicorp.com/terraform/language/backend
 
 
 
@@ -16,17 +18,28 @@ HCL:
                 experiments (Utilizado em momentos especificos, habilitar nova feture para testes)
                 provider_meta (Utilizado em momentos especificos, Envia respostar as providers em relação ao módulos)
 
-        provider
-        resource
-        data
-        module
-        variable
-        output
-        locals
-        import
-        moved
-        removed
-        check
+        provider:
+        resource:
+        data:
+        module:
+        variable:
+        output:
+        locals:
+        import:
+        moved:
+        removed:
+        check:
+
+        backend:
+             É responsavel por definir a configuração do backend remoto, que é usado para armazenar o estado do Terraform de forma centralizada e compartilhada entre diferentes usuários ou equipes.
+
+
+
+Local State:
+
+   É onde o Terraform armazena informações sobre os recursos que ele gerencia. O estado é usado para mapear recursos a configuração no Terraform, manter metadados e melhorar o desempenho das operações de planejamento e aplicação. O estado é armazenado localmente por padrão, mas pode ser armazenado remotamente em backends como Amazon S3, Azure Blob Storage, Google Cloud Storage, entre outros, para permitir colaboração e versionamento.
+
+
 
 
 Terraform CLI:
